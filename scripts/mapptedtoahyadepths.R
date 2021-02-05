@@ -1,0 +1,248 @@
+#depths_mappedtoahya
+
+AHE01avg<-mean(AHEavgdepths[1:4])
+AHE07avg<-mean(AHEavgdepths[9:12])
+AHE09avg<-mean(AHEavgdepths[13:16])
+AHE11avg<-mean(AHEavgdepths[17:20])
+
+AHE01_07_depth<-mean(AHEavgdepths[c(1:2,9:10)])
+AHE01_09_depth<-mean(AHEavgdepths[c(1:2,15:16)])
+AHE01_11_depth<-mean(AHEavgdepths[c(1:2,19:20)])
+AHE07_09_depth<-mean(AHEavgdepths[c(9:10,15:16)])
+AHE07_11_depth<-mean(AHEavgdepths[c(9:10,19:20)])
+AHE09_11_depth<-mean(AHEavgdepths[c(15:16,19:20)])
+
+AHASFOURSAMPLES<-data.frame(AHASavgdepths)[c(2:3,5:6,9:10,12:13,16:17,19:20,23:24,26:27,30:31,33:34),]
+AHAS41avg<-mean(AHASFOURSAMPLES[1:4])
+AHAS46avg<-mean(AHASFOURSAMPLES[5:8])
+AHAS51avg<-mean(AHASFOURSAMPLES[9:12])
+AHAS56avg<-mean(AHASFOURSAMPLES[13:16])
+AHAS61avg<-mean(AHASFOURSAMPLES[17:20])
+
+AHAS41_46_depth<-mean(AHASFOURSAMPLES[c(1:2,7:8)])
+AHAS41_51_depth<-mean(AHASFOURSAMPLES[c(1:2,11:12)])
+AHAS41_56_depth<-mean(AHASFOURSAMPLES[c(1:2,13:14)])
+AHAS41_61_depth<-mean(AHASFOURSAMPLES[c(1:2,17:18)])
+AHAS46_51_depth<-mean(AHASFOURSAMPLES[c(5:6,11:12)])
+AHAS46_56_depth<-mean(AHASFOURSAMPLES[c(5:6,13:14)])
+AHAS46_61_depth<-mean(AHASFOURSAMPLES[c(5:6,17:18)])
+AHAS51_56_depth<-mean(AHASFOURSAMPLES[c(9:10,13:14)])
+AHAS51_61_depth<-mean(AHASFOURSAMPLES[c(9:10,17:18)])
+AHAS56_61_depth<-mean(AHASFOURSAMPLES[c(13:14,17:18)])
+  
+#AHAS4<-depths_func(as.character(AHASFOURSAMPLES[,2]), AHASFOURSAMPLES[,1])
+AHBFOURSAMPLES<-data.frame(AHBavgdepths)[c(2:3,5:6,9:10,12:13,16:17,19:20,23:24,26:27,30:31,33:34,37:38,40:41,44:45,47:48),]
+AHB125avg<-mean(AHBFOURSAMPLES[1:4])
+AHB145avg<-mean(AHBFOURSAMPLES[5:8])
+AHB151avg<-mean(AHBFOURSAMPLES[9:12])
+AHB176avg<-mean(AHBFOURSAMPLES[13:16])
+AHB195avg<-mean(AHBFOURSAMPLES[17:20])
+AHB70avg<-mean(AHBFOURSAMPLES[21:24])
+AHB90avg<-mean(AHBFOURSAMPLES[25:28])
+
+AHB125avgsevensamples<-mean(AHBavgdepths[1:7])
+AHB145avgsevensamples<-mean(AHBavgdepths[8:14])
+AHB151avgsevensamples<-mean(AHBavgdepths[15:21])
+AHB176avgsevensamples<-mean(AHBavgdepths[22:28])
+AHB195avgsevensamples<-mean(AHBavgdepths[29:35])
+AHB70avgsevensamples<-mean(AHBavgdepths[36:42])
+AHB90avgsevensamples<-mean(AHBavgdepths[43:49])
+
+AHP01avgsevensamples<-mean(AHPavgdepths[1:7])
+AHP06avgsevensamples<-mean(AHPavgdepths[8:14])
+AHP16avgsevensamples<-mean(AHPavgdepths[22:28])
+AHAS46avgsevensamples<-mean(AHASavgdepths[8:14])
+AHAS51avgsevensamples<-mean(AHASavgdepths[15:21])
+AHAS56avgsevensamples<-mean(AHASavgdepths[22:28])
+AHAS61avgsevensamples<-mean(AHASavgdepths[29:35])
+
+#AHB4<-depths_func(as.character(AHBFOURSAMPLES[,2]), AHBFOURSAMPLES[,1])
+AHPFOURSAMPLES<-data.frame(AHPavgdepths)[c(1:2,4:5,8:9,11:12,22:23,25:26,29:30,31:32),]
+AHP01avg<-mean(AHPFOURSAMPLES[1:4])
+AHP06avg<-mean(AHPFOURSAMPLES[5:8])
+AHP16avg<-mean(AHPFOURSAMPLES[9:12])
+AHP21avg<-mean(AHPFOURSAMPLES[13:16])
+
+AHP01_06_depth<-mean(AHPFOURSAMPLES[c(1:2,5:6)])
+AHP01_16_depth<-mean(AHPFOURSAMPLES[c(1:2,11:12)])
+AHP06_16_depth<-mean(AHPFOURSAMPLES[c(5:6,11:12)])
+#pop_pairwise depths
+
+AHB125_145_depth<-mean(c(AHBFOURSAMPLES[c(3:4,5:6)]))
+AHB125_151_depth<-mean(c(AHBFOURSAMPLES[c(1:2,9:10)]))
+AHB125_176_depth<-mean(c(AHBFOURSAMPLES[c(1:2,13:14)]))
+AHB125_195_depth<-mean(c(AHBFOURSAMPLES[c(1:2,19:20)]))
+AHB125_70_depth<-mean(c(AHBFOURSAMPLES[c(1:2,23:24)]))
+AHB125_90_depth<-mean(c(AHBFOURSAMPLES[c(1:2,25:26)]))
+
+AHB145_151_depth<-mean(c(AHBFOURSAMPLES[c(5:6,9:10)]))
+AHB145_176_depth<-mean(c(AHBFOURSAMPLES[c(5:6,13:14)]))
+AHB145_195_depth<-mean(c(AHBFOURSAMPLES[c(5:6,19:20)]))
+AHB145_70_depth<-mean(c(AHBFOURSAMPLES[c(5:6,23:24)]))
+AHB145_90_depth<-mean(c(AHBFOURSAMPLES[c(5:6,25:26)]))
+
+AHB151_176_depth<-mean(c(AHBFOURSAMPLES[c(9:10,13:14)]))
+AHB151_195_depth<-mean(c(AHBFOURSAMPLES[c(9:10,19:20)]))
+AHB151_70_depth<-mean(c(AHBFOURSAMPLES[c(9:10,23:24)]))
+AHB151_90_depth<-mean(c(AHBFOURSAMPLES[c(9:10,25:26)]))
+
+AHB176_195_depth<-mean(c(AHBFOURSAMPLES[c(15:16,19:20)]))
+AHB176_70_depth<-mean(c(AHBFOURSAMPLES[c(15:16,23:24)]))
+AHB176_90_depth<-mean(c(AHBFOURSAMPLES[c(15:16,25:26)]))
+
+AHB195_70_depth<-mean(c(AHBFOURSAMPLES[c(17:18,23:24)]))
+AHB195_90_depth<-mean(c(AHBFOURSAMPLES[c(17:18,25:26)]))
+
+AHB70_90_depth<-mean(c(AHBFOURSAMPLES[c(21:22,25:26)]))
+
+
+AHEavgdepths<-c(7.02,
+                4.93,
+                15.85,
+                14.59,
+                1.91,
+                1.71,
+                0.71,
+                0.77,
+                6.85,
+                4.68,
+                22.6,
+                22.35,
+                8.47,
+                7.9,
+                4.94,
+                4.84,
+                22.15,
+                30.96,
+                17.52,
+                16.93)
+AHBavgdepths<-c(37.62,
+                29.74,
+                33.86,
+                28.33,
+                28.8,
+                26.25,
+                35.47,
+                39.75,
+                28.81,
+                58.49,
+                36.74,
+                31.37,
+                30.31,
+                28.27,
+                34.77,
+                38.01,
+                42.46,
+                30.75,
+                35.6,
+                35.79,
+                35.69,
+                15.38,
+                35.48,
+                31.54,
+                9.08,
+                33.38,
+                35.4,
+                39.98,
+                33.27,
+                8.55,
+                8.83,
+                28.81,
+                29.69,
+                37.53,
+                32.99,
+                27.56,
+                28.34,
+                27.82,
+                9.77,
+                31.43,
+                31.67,
+                29.94,
+                27.1,
+                38.54,
+                39.74,
+                19.01,
+                30.7,
+                33.24,
+                28.98)
+mean(AHBavgdepths)
+se(AHBavgdepths
+   )
+AHASavgdepths<-c(11.64,
+                 13.39,
+                 15.66,
+                 30.03,
+                 20.86,
+                 22.48,
+                 0.22,
+                 29.13,
+                 8.18,
+                 9.71,
+                 24.11,
+                 13.42,
+                 14.57,
+                 19.76,
+                 23.86,
+                 14.44,
+                 35.43,
+                 25.7,
+                 19.61,
+                 31.74,
+                 26.12,
+                 2.72,
+                 15.67,
+                 19.62,
+                 26.95,
+                 10.52,
+                 7.72,
+                 23.26,
+                 27.11,
+                 31.52,
+                 31.41,
+                 19.84,
+                 20.11,
+                 21.15,
+                 21.01)
+AHPavgdepths<-c(52.85,
+                53.32,
+                25.88,
+                32.55,
+                26.09,
+                34.44,
+                34.05,
+                10.38,
+                17.66,
+                19.96,
+                4.61,
+                3.63,
+                35.6,
+                66.39,
+                46.36,
+                26.88,
+                57.19,
+                25.17,
+                5.95,
+                5.07,
+                0,
+                38.35,
+                27.5,
+                61.09,
+                29.1,
+                32.68,
+                37.99,
+                25.48,
+                42.76,
+                43.93,
+                41.49,
+                42.02,
+                37.93,
+                46.05,
+                37.01)
+AHPforanalysis<-AHPavgdepths[c(1:14,22:28)]
+mean(AHPforanalysis)
+se(AHPforanalysis)
+mean(AHASavgdepths)
+se(AHASavgdepths)
+mean(AHEavgdepths[c(1:4,9:20)])
+se(AHEavgdepths[c(1:4,9:20)])
+
